@@ -56,6 +56,7 @@ class UsuarioController extends Controller
      {
         //dd($id);
          $usuario = Usuario::find($id);
+        //  dd($usuario);
          return view('usuario.edit')->with('usuario',$usuario);
      }
 
